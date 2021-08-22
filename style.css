@@ -13,7 +13,7 @@
     --clr-bg-light: #3b3b3b;
     --clr-accent:   rgb(255, 255, 255);
 }
-.main-grid{
+body{
     background-color: var(--clr-bg-dark);
 color: var(--clr-text);
 padding: 1em;
@@ -49,7 +49,7 @@ text-transform: uppercase;
 .primary-heading{
     color: var(--clr-accent);
     margin-top: 0.5em;
-    font-size: clamp(3rem,10vw,12rem);
+    font-size: clamp(3rem,10vw,10rem);
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.85);
     font-family: 'Orbitron', sans-serif;
     text-align: center;
@@ -59,7 +59,7 @@ text-transform: uppercase;
     font-weight: 600;
 line-height: 1;
     margin-bottom: 1em;
-    font-size: clamp(1.3rem,3vw,5rem) ;
+    font-size: clamp(1.3rem,3vw,3rem) ;
     text-align: center;
 }
 .primary-img{
@@ -129,9 +129,9 @@ footer{
         grid-template-columns: minmax(1em,1fr)
         repeat(2,minmax(20em,40em))
         minmax(1em,20em) minmax(1em,1fr);
+        grid-template-rows: minmax(4em,4fr) auto minmax(4em,4fr);
         gap: 1em;
         position: relative;
-        z-index: 1;
         padding: 0;
     }
     .main-grid::after{
@@ -143,7 +143,7 @@ footer{
         right: -2em;
         height: 100%;
         grid-column: 3/4;
-        grid-row: 1/3;
+        grid-row: 1/4;
         background-color: var(--clr-bg-light);
         z-index: -1;
     }
