@@ -124,6 +124,9 @@ footer{
     opacity: 1;
 }
 @media  (min-width : 800px) {
+    body{
+        padding : 0;
+    }
     .main-grid{
         display: grid;
         grid-template-columns: minmax(1em,1fr)
